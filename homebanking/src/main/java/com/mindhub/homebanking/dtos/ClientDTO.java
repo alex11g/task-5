@@ -1,49 +1,54 @@
 package com.mindhub.homebanking.dtos;
 
+import com.mindhub.homebanking.models.Account;
 import com.mindhub.homebanking.models.Client;
 
-public class ClienDTO {
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class ClientDTO {
     private long id;
     private String name;
     private String email;
     private String lastName;
 
+    private Set<AccountDTO> accountDTOS;
 
-    public ClienDTO() {
+
+    public ClientDTO() {
     }
 
-    public ClienDTO(Client client) {
+    public ClientDTO(Client client) {
         this.id = client.getId();
         this.name = client.getName();
         this.email = client.getEmail();
         this.lastName = client.getLastName();
+        this.accountDTOS = client.getAccounts().stream().map(account -> new AccountDTO(account)).collect(Collectors.toSet());
     }
+
 
     public long getId() {
         return id;
+    }
+
+    public Set<AccountDTO> getAccountDTOS() {
+        return accountDTOS;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 }

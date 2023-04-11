@@ -1,18 +1,36 @@
-package com.mindhub.homebanking;
+package com.mindhub.homebanking.models;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
+@Entity
 public class Client {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
+    private long id;
     private String name;
-    private String correo;
-    private String apellido;
-    private int id;
+    private String email;
+    private String lastName;
 
+    @OneToMany(mappedBy = "client")
+    private Set<Account> accounts = new HashSet<>();
     public Client() {
     }
 
-    public Client(String name, String correo, String apellido) {
+    public Client(String name, String email, String lastName) {
         this.name = name;
-        this.correo = correo;
-        this.apellido = apellido;
+        this.email = email;
+        this.lastName = lastName;
+    }
+
+
+    public void addAccount(Account account) {
+        account.setClient(this);
+        accounts.add(account);
     }
 
     public String getName() {
@@ -23,27 +41,41 @@ public class Client {
         this.name = name;
     }
 
-    public String getCorreo() {
-        return correo;
+    public String getEmail() {
+        return email;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+
+    public Set<Account> getAccounts() {
+        return accounts;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", id=" + id +
+                ", accounts=" + accounts +
+                '}';
     }
 }
+
