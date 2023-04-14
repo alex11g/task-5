@@ -1,0 +1,362 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(251, 255, 0);
+    align-items: center;
+    
+}
+nav a{
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 3px;
+    color: black;
+}
+nav a:hover{
+    background-color: rgb(255, 179, 0);
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.txt-one{
+    width: 200px;
+    margin-right: 610px;
+}
+.logo{
+    width: 40px;
+    margin-right: 30px;
+}
+.img-tamaño{
+    width: 1300px;
+    height: 400px;
+    margin-top: 10px;
+   
+}
+.txt-superpuesto,.txt-superpuesto-dos{
+    display: none;
+}
+.img-uno{
+    text-align: center;
+}
+.img-tamaño-dos{
+    width: 300px;
+}
+/* -----------------------------------------BOUT US-------------------------------------------------------------- */
+.padre-about{
+    display: flex;
+    justify-content: space-around;
+}
+.padre-about-dos{
+    display: flex;
+    justify-content: space-around;
+}
+.padre-about-tres{
+    display: flex;
+    justify-content: space-around;
+}
+.texto{
+    width: 200px;
+    margin-top: 75px;
+    margin-right: 500px;
+}
+.texto-two{
+    width: 200px;
+    margin-top: 120px;
+    margin-right: 500px;
+}
+.texto-tres{
+    width: 200px;
+    margin-top: 150px;
+    margin-right: 500px;
+}
+.imagenes,.imagenes-dos,.imagenes-tres{
+    width: 250px;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+/* -----------------------------------------------contac--------------- */
+.fondo{
+    width: 900px;
+    height: 400px;
+    margin-top: 20px;
+}
+.fondo-uno{
+    text-align: center;
+}
+.correo{
+    margin-top: 20px;
+}
+.phone{
+    margin-top: 20px;
+}
+.text-contac{
+    margin-top: 40px;
+    text-align: center;
+}
+.alinear{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.h1-contact{
+    display: none   ;
+}
+/* -------------------------------------------AVALIBLE-SERVICES------------------------------------------- */
+table,tr,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+table{
+    margin-left: 65vh;
+    margin-top: 8vh;
+    width: 70vh;
+    height: 35vh; 
+}
+th{
+    width: 0px;
+    padding: 30px;
+}
+td{
+    text-align: center;
+    padding: 20px;
+}
+caption{
+    text-align: left;
+    font-size: 25px;
+    margin: 2px;
+}
+.tema-uno{
+    background-color: rgb(0, 157, 255);
+}
+.tema-dos{
+    background-color: #ffffff;
+}
+.tema-tres{
+    background-color: rgb(0, 157, 255);
+}
+/* -----------------------------------------COURSES----------------------------------------------------------- */
+.course-img{
+    width: 250px;
+    height: 200px;
+    margin-top: 8vh;
+    border-radius: 40px;
+}
+.img-padre{
+    display: flex;
+    margin-left: 10vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul li{
+    margin-left: 10vh;
+    width: 60vh;
+    
+}
+
+.h3-courses{
+    margin-left: 8vh;
+    margin-top: 8vh;
+}
+/* -----------------------------------------FORM----------------------------------------------------------------- */
+.img-form{
+    width: 250px;
+    height: 200px;
+    border-radius: 40px;
+    margin-top: 5vh;
+}
+.img-padre-form{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    margin-left: 30vh;
+    width: 40vh;
+    align-items: center;
+}
+.QUESTION_TITLE {
+    color: black;
+    margin: 60px 0px 0px 0px;
+    text-align: center;
+}
+.QUESTION_TITLE_DOS {
+    text-align: center;
+    color: blue;
+}
+.QUESTION_TITLE_THREE {
+    margin: 30px;
+    font-size: 15px;
+    width: 70vh;
+    color: black;
+}
+form {
+    text-align: left;
+}
+.FORM_UNO {
+    margin: 0px 0px 0px 25px;
+    color: black;
+}
+.FORM_TWO {
+    margin: 0px 0px 0px 10px;
+}
+.FORM_THREE {
+    margin: 0px 0px 0px 25px;
+}
+.FORM_FOUR {
+    margin: 0px 0px 0px 10px;
+}
+.FORM_FIVE {
+    margin: 0px 0px 0px 25px;
+}
+.FORM_SIX {
+    margin: 0px 0px 0px 10px;
+}
+
+.FORM_SEVEN {
+    margin: 0px 0px 0px 25px;
+}
+.FORM_EIGHT {
+    margin: 0px 0px 0px 10px;
+}
+.FORM_NINE {
+    margin: 0px 0px 0px 25px;
+}
+.FORM_TEN {
+    margin: 0px 0px 0px 25px;
+}
+.FORM_ELEVEN {
+    margin: 0px 0px 0px 25px;
+}
+.INPUT_ONE,
+.INPUT_TWO,
+.INPUT_THREE {
+    margin: 0px 0px 0px 25px;
+}
+.FORM_TEXT_ONE {
+    margin-left: 18px;
+}
+.FORM_TEXT_TWO {
+    margin-left: 10px;
+}
+.FORM_TEXT_THREE {
+    margin-left: 38px;
+}
+.FORM_TEXT_FOUR {
+    margin-left: 18px;
+}
+.FORM_TEXT_FIVE {
+    margin: 0px 0px 0px 63px;
+}
+.FORM_TEXT_SIX {
+    margin: 0px 0px 0px 35px;
+}
+.FORM_TEXT_SEVEN {
+    margin: 0px 0px 0px 49px;
+}
+.FORM_TEXT_EIGHT {
+    margin: 0px 0px 0px 43px;
+}
+.FORM_TEXT_NINE {
+    margin: 0px 0px 0px 31px;
+}
+.FORM_TEXT_TEN {
+    margin: 0px 0px 0px 43px;
+}
+.FORM_TEXT_ELEVEN {
+    margin: 0px 0px 0px 32px;
+}
+.FORM_TEXT_TWELVE {
+    margin: 0px 0px 0px 160px;
+}
+.FORM_TEXT_THIRTEEN {
+    margin: 0px 0px 0px 160px;
+}
+.FORM_CONTAINER_ONE {
+    display: flex;
+    color: black;
+}
+.FORM_CONTAINER_TWO {
+    display: flex;
+    color: black;
+}
+.FORM_CONTAINER_THREE {
+    display: flex;
+    color: black;
+}
+.FORM_CONTAINER_FOUR {
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+.FORM_CONTAINER_FIVE {
+    color: black;
+}
+.FORM_CONTAINER_SIX {
+    display: flex;
+    color: black;
+}
+.FORM_CONTAINER_SEVEN {
+    display: flex;
+    color: black;
+}
+.FORM_CONTAINER_EIGTH {
+    color: black;
+    margin-left: 27vh;
+}
+.FORM_CONTAINER_NINE {
+    color: black;
+    margin: 30px;
+    margin-left: 10vh;
+}
+.padre-form{
+    flex-direction: column;
+    margin-left: 0vh;
+    height: 50vh;
+    width: 80vh;
+    background-color: rgba(66, 185, 189, 0.496);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.CONTAINER_IMG {
+    margin: 100px 0px 0px 0px;
+    margin-left: 35vh;
+    width: 35vh
+}
+.IMG_FORM_TWO {
+    margin: 40px 0px 0px 0px;
+}
+.MARGI_FORM_ONE,
+.MARGI_FORM_TWO {
+    border: 2px solid rgb(0, 255, 221);
+    border-radius: 9px;
+}
+footer {
+    background-color: #4ebad5;
+}
+.LOCATION{
+    margin-left: 50vh;
+    border-radius: 20px;
+}
+hr {
+    border: 1px solid rgb(0, 0, 0);
+    margin: -23vh 0px 0px 0px;
+}
+.padre-todo-form{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8vh;
+    align-items: center;
+}

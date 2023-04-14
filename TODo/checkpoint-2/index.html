@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="icon" href="./img/dog.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Contacto</a>
+            <a href="#">Mas</a>
+        </nav>
+        <h1>Galeria de Arte</h1>
+    </header>
+    <main>
+        <div class="table-form">
+            <div>
+                <table>
+                    <caption><strong>Fechas de Inscripciones</strong></caption>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Curso</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10/05/23</td>
+                            <td>Introduccion al Arte</td>
+                            <td>$15000</td>
+                        </tr>
+                        <tr>
+                            <td>15/05/23</td>
+                            <td>Arte nivel I</td>
+                            <td>$25000</td>
+                        </tr>
+                        <tr>
+                            <td>20/05/23</td>
+                            <td>Arte nivel II</td>
+                            <td>$30000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <form action="./show_data.html" method="get">
+                <label>
+                    Dejanos tus datos:
+                </label>
+                <br>
+                <label class="nombre-label">
+                    Nombre:
+                    <input type="text" name="Nombre" required>
+                </label>
+                <br>
+                <label>
+                    Apellido:
+                    <input type="text" name="Apellido" required>
+                </label>
+                <br>
+                <label>
+                    Email:
+                    <input type="email" name="Email" required>
+                </label>
+                <fieldset class="fieldset">
+                    <legend>Deseas recibir mas información?</legend>
+                    <label>
+                        <input type="radio" name="eleccion" value="Si">
+                    </label>
+                    <label>
+                        Si
+                    </label>
+                    <label>
+                        <input type="radio" name="eleccion" value="No">
+                    </label>
+                    <label>
+                        No
+                    </label>
+                </fieldset>
+                <br>
+                <label>
+                    <input type="checkbox" name="I accept terms and conditions" value="Yes" required>Acepto terminos y
+                    condiciones
+                </label>
+                <br>
+                <label>
+                    <input type="submit" value="Enviar">
+                </label>
+            </form>
+        </div>
+        <div class="contenedor-todo">
+            <div class="padre-contenedor">
+                <h2>Astronauta Perro 1</h2>
+                <img class="img-1" src="./img/perro-uno.jpeg" alt="">
+                <ul>
+                    <li>Opcion 1</li>
+                    <li>Opcion 2</li>
+                    <li>Opcion 3</li>
+                </ul>
+                <a href="#">Ver mas</a>
+            </div>
+            <div class="padre-contenedor">
+                <h2>Astronauta Perro 2</h2>
+                <img class="img-1" src="./img/perro-dos.jpeg" alt="">
+                <ul>
+                    <li>Opcion 1</li>
+                    <li>Opcion 2</li>
+                    <li>Opcion 3</li>
+                </ul>
+                <a href="#">Ver mas</a>
+            </div>
+            <div class="padre-contenedor">
+                <h2>Astronauta Perro 3</h2>
+                <img class="img-1" src="./img/perro-tres.jpeg" alt="">
+                <ul>
+                    <li>Opcion 1</li>
+                    <li>Opcion 2</li>
+                    <li>Opcion 3</li>
+                </ul>
+                <a href="#">Ver mas</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Cohort N</p>
+        <p>Stack</p>
+        <a href="mailto:Arte@academia.com">Arte@academia.com</a>
+    </footer>
+</body>
+
+</html>
