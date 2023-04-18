@@ -24,12 +24,17 @@ public class AccountController {
 
     @RequestMapping("/api/accounts")
     public List<AccountDTO> getAccount (){
-        return accountRepository.findAll().stream().map(account -> new AccountDTO(account)).collect(Collectors.toList());
+        return accountRepository.findAll()
+                .stream()
+                .map(account -> new AccountDTO(account))
+                .collect(Collectors.toList());
     };
 
 
     @RequestMapping("/api/accounts/{id}")
     public AccountDTO getAccount (@PathVariable Long id ){
-        return accountRepository.findById(id).map(account -> new AccountDTO(account)).orElse(null);
+        return accountRepository.findById(id)
+                .map(account -> new AccountDTO(account))
+                .orElse(null);
     };
 }

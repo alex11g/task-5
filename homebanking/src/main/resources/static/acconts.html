@@ -18,11 +18,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./manager.html">Manager</a>
+                        <a class="" aria-current="page" href="./manager.html">Manager</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Acconts</a>
+                        <a class="" href="#">Acconts</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="" href="./cards.html">Cards</a>
+                      </li>
 
                 </ul>
 
@@ -46,7 +49,7 @@
                 <td>{{valor.number}} </td>
                 <td>{{valor.creationDate}} </td>
                 <td>{{valor.balance}} </td>
-                <td> <a :href= '"./account.html?id="+valor.id'> <img class="logo" src="./img/logooo.png" alt="" > </a></td>
+                <td> <a :href= '"./account.html?id="+valor.id'> <img class="logooo" src="./img/logooo.png" alt="" > </a></td>
             </tr>
         </tbody>
     </table>

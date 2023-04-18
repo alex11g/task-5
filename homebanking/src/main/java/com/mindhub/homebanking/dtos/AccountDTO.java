@@ -15,12 +15,15 @@ public class AccountDTO {
     private LocalDateTime creationDate;
     private Set<TransactionDTO> transactions;
 
+
     public AccountDTO(Account account) {
         this.id = account.getId();
         this.number = account.getNumber();
         this.balance = account.getBalance();
         this.creationDate = account.getCreationDate();
-        this.transactions = account.getTransactions().stream().map(transaction -> new TransactionDTO(transaction)).collect(Collectors.toSet());
+        this.transactions = account.getTransactions()
+                .stream()
+                .map(transaction -> new TransactionDTO(transaction)).collect(Collectors.toSet());
     }
 
     public long getId() {

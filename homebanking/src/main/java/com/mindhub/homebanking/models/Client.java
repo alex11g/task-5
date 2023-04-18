@@ -23,6 +23,8 @@ public class Client {
 
     @OneToMany(mappedBy = "client")
     private Set<ClientLoan> clientLoans = new HashSet<>();
+    @OneToMany(mappedBy = "client")
+    private Set<Card> cards = new HashSet<>();
     public Client() {
     }
 
@@ -41,9 +43,15 @@ public class Client {
         clientLoan.setClient(this);
         clientLoans.add(clientLoan);
     }
+    public void addCard(Card card) {
+        card.setClient(this);
+        cards.add(card);
+    }
 
     public List<Loan> getLoans() {
-        return clientLoans.stream().map(clientLoan -> clientLoan.getLoan()).collect(Collectors.toList());
+        return clientLoans.stream()
+                .map(clientLoan -> clientLoan.getLoan())
+                .collect(Collectors.toList());
     }
 
     public String getName() {
@@ -88,15 +96,14 @@ public class Client {
         this.clientLoans = clientLoans;
     }
 
-    @Override
-    public String toString() {
-        return "Client{" +
-                "name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", id=" + id +
-                ", accounts=" + accounts +
-                '}';
+    public Set<Card> getCards() {
+        return cards;
     }
+
+    public void setCards(Set<Card> cards) {
+        this.cards = cards;
+    }
+
+
 }
 

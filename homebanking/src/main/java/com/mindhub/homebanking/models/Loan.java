@@ -41,7 +41,9 @@ public class Loan {
 
     @JsonIgnore
     public List<Client> getClients() {
-        return clientLoans.stream().map(clientLoan -> clientLoan.getClient()).collect(Collectors.toList());
+        return clientLoans.stream()
+                .map(clientLoan -> clientLoan.getClient())
+                .collect(Collectors.toList());
     }
 
     public long getId() {
